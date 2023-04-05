@@ -18,13 +18,13 @@
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__list-item main-nav__list-item--active">
+          <li class="main-nav__list-item">
             <a href="#">Главная</a>
           </li>
           <li class="main-nav__list-item">
             <a href="#">Фото и видео</a>
           </li>
-          <li class="main-nav__list-item">
+          <li class="main-nav__list-item main-nav__list-item--active">
             <a href="#">Форма отзыва</a>
           </li>
           <li class="main-nav__list-item">
@@ -48,7 +48,7 @@
     </section>
 
     <form class="feedback">
-      <div class="feedback">
+      <div class="feedback__wrapper">
         <h2 class="visually-hidden">Форма отзыва</h2>
         <section class="feedback__request request">
           <div class="request__wrapper">
@@ -64,26 +64,28 @@
               <legend class="feedback__title login-form__title">Представьтесь:</legend>
               <p class="login-form__group">
                 <label class="login-form__label" for="name">Имя*:</label>
-                <input class="login-form__field" id="name" type="text">
+                <input class="login-form__field" id="name" type="text" placeholder="Пётр">
               </p>
               <p class="login-form__group">
                 <label class="login-form__label" for="surname">Фамилия*:</label>
-                <input class="login-form__field" id="name" type="text">
+                <input class="login-form__field" id="name" type="text" placeholder="Пустота">
               </p>
               <p class="login-form__group">
                 <label class="login-form__label" for="fathername">Отчество:</label>
-                <input class="login-form__field" id="name" type="text">
+                <input class="login-form__field" id="name" type="text" placeholder="Викторович">
               </p>
             </fieldset>
             <fieldset class="login-form__wrapper-contacts">
               <legend class="feedback__title login-form__title">Контактная информация:</legend>
               <p class="login-form__group">
                 <label class="login-form__label" for="fathername">Контактный телефон*:</label>
-                <input class="login-form__field" id="name" type="tel">
+                <input class="login-form__field login-form__field--contacts" id="name" type="tel"
+                  placeholder="Введите телефон">
               </p>
               <p class="login-form__group">
                 <label class="login-form__label" for="fathername">Электронная почта*:</label>
-                <input class="login-form__field" id="name" type="email">
+                <input class="login-form__field login-form__field--contacts" id="name" type="email"
+                  placeholder="Введите e-mail">
               </p>
             </fieldset>
           </div>
@@ -96,19 +98,19 @@
               <li class="impression__item">
                 <label class="feedback__label">
                   <input class="feedback__radio" type="radio">
-                    <span class="feedback__field-text">Скорее положительное</span>
+                  <span class="feedback__field-text">Скорее положительное</span>
                 </label>
               </li>
               <li class="impression__item">
                 <label class="feedback__label">
                   <input class="feedback__radio" type="radio">
-                    <span class="feedback__field-text">Скорее отрицательное</span>
+                  <span class="feedback__field-text">Скорее отрицательное</span>
                 </label>
               </li>
               <li class="impression__item">
                 <label class="feedback__label">
                   <input class="feedback__radio" type="radio">
-                    <span class="feedback__field-text">Затрудняюсь ответить</span>
+                  <span class="feedback__field-text">Затрудняюсь ответить</span>
                 </label>
               </li>
             </ul>
@@ -117,15 +119,48 @@
 
         <fieldset class="sites">
           <div class="sites__wrapper">
-            <legend class="feedback__title impression__title">Ваше общее впечатление</legend>
+            <legend class="feedback__title impression__title">Посещенные достопримечательности:</legend>
             <ul class="sites__list">
               <li class="sites__item">
-
+                <label class="feedback__label">
+                  <input class="feedback__checkbox" type="checkbox" checked>
+                  <span class="feedback__field-text">Мост Дьявола</span>
+                </label>
+              </li>
+              <li class="sites__item">
+                <label class="feedback__label">
+                  <input class="feedback__checkbox" type="checkbox" checked>
+                  <span class="feedback__field-text">Гора-Колокол</span>
+                </label>
+              </li>
+              <li class="sites__item">
+                <label class="feedback__label">
+                  <input class="feedback__checkbox" type="checkbox" checked>
+                  <span class="feedback__field-text">Слайд-парк</span>
+                </label>
+              </li>
+              <li class="sites__item">
+                <label class="feedback__label">
+                  <input class="feedback__checkbox" type="checkbox" checked>
+                  <span class="feedback__field-text">Красные скалы</span>
+                </label>
               </li>
             </ul>
           </div>
         </fieldset>
 
+        <fieldset class="emotions">
+          <div class="emotions__wrapper">
+            <legend class="feedback__title emotions__title">Опишите свои эмоции</legend>
+            <label class="visually-hidden" for="feedback-text">Развернутый ответ</label>
+            <textarea class="emotions__feedback-text" id="feedback-text">Опишите подробно все свои восторги</textarea>
+            <div class="feedback__bottom-wrapper">
+              <button class="based-button" type="submit">Отправить отзыв</button>
+              <small class="feedback__legend">Обязательные поля</small>
+            </div>
+          </div>
+        </fieldset>
+      </div>
     </form>
 
   </main>
