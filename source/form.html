@@ -52,8 +52,8 @@
         <h2 class="visually-hidden">Форма отзыва</h2>
         <section class="feedback__request request">
           <div class="request__wrapper">
-            <p class="request__text request__text--bold">Оставьте свой отзыв</p>
-            <p class="request__text request__text--normal">Помогите нашим отелям стать лучше! оставьте отзыв о них,а
+            <p class="request__title">Оставьте свой отзыв</p>
+            <p class="description request__description">Помогите нашим отелям стать лучше! оставьте отзыв о них,а
               также о посещенных вами достопримечательностях</p>
           </div>
         </section>
@@ -61,29 +61,29 @@
         <section class="login-form">
           <div class="login-form__wrapper">
             <fieldset class="login-form__wrapper-name">
-              <legend class="feedback__title login-form__title">Представьтесь:</legend>
+              <legend class="feedback-title login__title">Представьтесь:</legend>
               <p class="login-form__group">
-                <label class="login-form__label" for="name">Имя*:</label>
+                <label class="login-form__label description" for="name">Имя*:</label>
                 <input class="login-form__field" id="name" type="text" placeholder="Пётр">
               </p>
               <p class="login-form__group">
-                <label class="login-form__label" for="surname">Фамилия*:</label>
+                <label class="login-form__label description" for="surname">Фамилия*:</label>
                 <input class="login-form__field" id="name" type="text" placeholder="Пустота">
               </p>
               <p class="login-form__group">
-                <label class="login-form__label" for="fathername">Отчество:</label>
+                <label class="login-form__label description" for="fathername">Отчество:</label>
                 <input class="login-form__field" id="name" type="text" placeholder="Викторович">
               </p>
             </fieldset>
             <fieldset class="login-form__wrapper-contacts">
-              <legend class="feedback__title login-form__title">Контактная информация:</legend>
+              <legend class="feedback-title login__title">Контактная информация:</legend>
               <p class="login-form__group">
-                <label class="login-form__label" for="fathername">Контактный телефон*:</label>
+                <label class="login-form__label description" for="fathername">Контактный телефон*:</label>
                 <input class="login-form__field login-form__field--contacts" id="name" type="tel"
                   placeholder="Введите телефон">
               </p>
               <p class="login-form__group">
-                <label class="login-form__label" for="fathername">Электронная почта*:</label>
+                <label class="login-form__label description" for="fathername">Электронная почта*:</label>
                 <input class="login-form__field login-form__field--contacts" id="name" type="email"
                   placeholder="Введите e-mail">
               </p>
@@ -93,7 +93,7 @@
 
         <fieldset class="impression">
           <div class="impression__wrapper">
-            <legend class="feedback__title impression__title">Ваше общее впечатление</legend>
+            <legend class="feedback-title impression__title">Ваше общее впечатление</legend>
             <ul class="impression__list">
               <li class="impression__item">
                 <label class="feedback__label">
@@ -119,7 +119,7 @@
 
         <fieldset class="sites">
           <div class="sites__wrapper">
-            <legend class="feedback__title impression__title">Посещенные достопримечательности:</legend>
+            <legend class="feedback-title sites__title">Посещенные достопримечательности:</legend>
             <ul class="sites__list">
               <li class="sites__item">
                 <label class="feedback__label">
@@ -151,12 +151,12 @@
 
         <fieldset class="emotions">
           <div class="emotions__wrapper">
-            <legend class="feedback__title emotions__title">Опишите свои эмоции</legend>
+            <legend class="feedback-title emotions__title">Опишите свои эмоции</legend>
             <label class="visually-hidden" for="feedback-text">Развернутый ответ</label>
             <textarea class="emotions__feedback-text" id="feedback-text">Опишите подробно все свои восторги</textarea>
             <div class="feedback__bottom-wrapper">
               <button class="based-button" type="submit">Отправить отзыв</button>
-              <small class="feedback__legend">Обязательные поля</small>
+              <small class="feedback__legend description">Обязательные поля</small>
             </div>
           </div>
         </fieldset>
@@ -187,7 +187,7 @@
     </div>
 
     <div class="main-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
+      <b class="copyright__text description">Разработано:</b>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <img class="academy-logo" src="" alt="HTML Academy" width="" height="" loading="lazy">
       </a>
@@ -198,7 +198,8 @@
     <section class="modal__content modal__error">
       <div class="modal__content-wrapper">
         <h2 class="modal__title">Что-то пошло не так!</h2>
-        <p class="modal__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <p class="modal__message description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
         <div class="modal__button modal__button--error">
           <button class="based-button" type="button">Ок</button>
         </div>
@@ -208,7 +209,8 @@
     <section class="modal__content modal__normal">
       <div class="modal__content-wrapper">
         <h2 class="modal__title">Ваш отзыв отправлен</h2>
-        <p class="modal__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем
+        <p class="modal__message description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
+          опубликуем
           его на сайте.</p>
         <div class="modal__button">
           <button class="based-button" type="button">Закрыть окно</button>
