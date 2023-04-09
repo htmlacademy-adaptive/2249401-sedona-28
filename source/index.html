@@ -4,11 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo">
+    <a class="main-header__logo logo">
       <img class="main-header__logo-image" src="" alt="Седона" width="185" height="96" loading="lazy"></img>
     </a>
     <nav class="main-nav">
@@ -36,11 +37,11 @@
 
   <main class="main-container">
     <h1 class="visually-hidden">Седона</h1>
-    <section class="description">
-      <div class="description__wrapper hero">
+    <section class="hero">
+      <div class="hero__wrapper">
         <h2 class="visually-hidden">Приветствие</h2>
-        <img class="description__background-image" src="" alt="Пейзаж Седоны" width="" height="" loading="lazy">
-        <div class=" description__hero-group hero__main-group">
+        <img class="hero__background-image" src="" alt="Пейзаж Седоны" width="" height="" loading="lazy">
+        <div class="hero__hero-group hero__hero-group--main-group">
           <img class="hero__greeting-image" src="" alt="Welcome" width="" height="" loading="lazy">
           <img class="hero__describing-image" src="" alt="to the gorgeous" width="" height="" loading="lazy">
           <img class="hero__title-image" src="" alt="Sedona" width="" height="" loading="lazy">
@@ -52,16 +53,12 @@
     <section class="benefits">
       <div class="benefits__wrapper">
         <h2 class="visually-hidden">Причины посетить Седону</h2>
-<<<<<<< HEAD
-        <p class="benefits__slogan title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p class="benefits__intro description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        <div class="benefits__article-list benefits__article-item--image-disclosed">
-=======
-        <p class="benefits__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p class="benefits__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        <div class="benefits__article-item benefits__article-item--image-disclosed">
->>>>>>> 895805c3b7c45b9c4ff4797580b2242367080786
-          <article class="benefits__article">
+        <div class="benefits__intro">
+          <p class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
+        <div class="benefits__article-list">
+          <article class="benefits__article benefits__article--image-disclosed">
             <h3 class="benefits__article-heading title title__article-heading">Настоящий городок</h3>
             <p class="benefits__article-number description description__article-text">— №1 —</p>
             <p class="benefits__article-explication description description__article-text">Седона не аттракцион для
@@ -86,8 +83,8 @@
               но и местного производства!</dd>
           </div>
         </dl>
-        <div class="benefits__article-item benefits__article-item--image-disclosed">
-          <article class="benefits__article">
+        <div class="benefits__article-item">
+          <article class="benefits__article benefits__article--image-disclosed">
             <h3 class="benefits__article-heading title title__article-heading">Там есть Мост дьявола</h3>
             <p class="benefits__article-number description description__article-text">— №2 —</p>
             <p class="benefits__article-explication">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
@@ -139,9 +136,7 @@
 
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <div class="main-footer__contacts footer-contacts">
-        <p class="footer-contacts__hashtag">#visitsedona</p>
-      </div>
+      <p class="main-footer__hashtag">#visitsedona</p>
 
       <div class="main-footer__social social">
         <ul class="social__list">
