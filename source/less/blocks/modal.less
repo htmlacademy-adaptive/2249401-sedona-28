@@ -1,0 +1,36 @@
+.modal {
+  display: block;
+
+  &--closed {
+    display: none;
+  }
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.modal__error {
+  min-height: 280px;
+}
+
+.modal__error-text {
+  min-height: 114px;
+  margin-bottom: 28px;
+}
+
+.modal__normal {
+  min-height: 323px;
+}
+
+.modal__normal-text {
+  min-height: 156px;
+  margin-bottom: 30px;
+}
+
+.modal__button {
+  background-color: @light-grey;
+}

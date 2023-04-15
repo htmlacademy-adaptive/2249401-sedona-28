@@ -1,13 +1,31 @@
 .hero {
-  background-color: #81b3d2;
+  background-color: @light-blue;
+}
+
+.hero__main {
+  margin-bottom: 32px;
+}
+
+.hero__form {
+  margin-bottom: 36px;
+}
+
+.hero__catalog {
+  margin-bottom: 37px;
 }
 
 .hero__hero-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   &--main-group {
-    margin-top: 78px;
+    margin-top: 90px;
+    margin-bottom: 80px;
   }
 
   &--secondary-group {
     margin-top: 101px;
   }
 }
+
