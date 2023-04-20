@@ -1,15 +1,30 @@
 .main-nav {
   display: flex;
+  width: 100%;
+}
+
+.main-nav__wrapper {
+  display: flex;
+  width: 100%;
 }
 
 .main-nav__list {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+  flex-direction: column;
+  width: inherit;
+  min-height: 223px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .main-nav__link {
-  color: inherit;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.44;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -17,11 +32,69 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 100%;
-  min-height: inherit;
+  min-height: 55px;
   font-weight: 700;
+  background-color: @light-blue;
 
   &--active {
     color: #766357;
+  }
+}
+
+.main-nav__logo {
+  background-color: @light-blue;
+  height: 96px;
+  order: -1;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 56px;
+  }
+
+  .main-nav__list-item {
+    min-height: inherit;
+    background-color: transparent;
+  }
+
+  .main-nav__link {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    color: inherit;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 56px;
+  }
+
+  .main-nav__list-item {
+    min-height: inherit;
+    background-color: transparent;
+  }
+
+  .main-nav__link {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    color: inherit;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 }

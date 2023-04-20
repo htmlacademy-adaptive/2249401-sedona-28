@@ -1,9 +1,16 @@
+.collage__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  margin-bottom: 17px;
+}
+
 .collage__text-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 17px;
+  margin-bottom: 50px;
 }
 
 .collage__heading {
@@ -17,9 +24,11 @@
 
 .collage__list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  row-gap: 50px;
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 25px;
   padding: 0;
   list-style: none;
 }
@@ -28,13 +37,35 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
-  text-align: center;
+  text-align: left;
 }
 
 .collage__pic-caption {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  text-align: center;
+  text-align: left;
   text-transform: none;
+}
+
+@media (min-width: @tablet-width) {
+  .collage__wrapper {
+    margin: 0 60px;
+    margin-bottom: 58px;
+  }
+
+  .collage__list {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .collage__wrapper {
+    margin: 0 120px;
+    margin-bottom: 62px;
+  }
+
+  .collage__list {
+    flex-direction: row;
+  }
 }

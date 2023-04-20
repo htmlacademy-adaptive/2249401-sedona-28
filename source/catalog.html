@@ -5,31 +5,36 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo logo">
-      <img class="main-header__logo-image" src="" alt="Седона" width="185" height="96" loading="lazy"></img>
-    </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-nav__list">
-        <li class="main-nav__list-item">
-          <a class="main-nav__link" href="index.html">Главная</a>
-        </li>
-        <li class="main-nav__list-item main-nav__list-item--active">
-          <a class="main-nav__link" href="catalog.html">Фото и видео</a>
-        </li>
-        <li class="main-nav__list-item">
-          <a class="main-nav__link" href="form.html">Форма отзыва</a>
-        </li>
-        <li class="main-nav__list-item">
-          <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-        </li>
-      </ul>
+      <div class="main-nav__wrapper">
+        <button class="main-nav__toggle">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__list-item main-nav__list-item--active">
+            <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__list-item">
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+        <a class="main-nav__logo logo">
+          <img class="main-n__logo-image" src="" alt="Седона" width="185" height="96" loading="lazy"></img>
+        </a>
+      </div>
     </nav>
   </header>
 
@@ -107,9 +112,11 @@
 
     <section class="catalog-video">
       <div class="catalog-video__wrapper">
+        <div class="catalog-video__text-group">
         <h2 class="catalog-video__heading title">Все еще сомневаетесь?</h2>
         <p class="catalog-video__text description">Смотрите видеопрезентацию и скорее за билетами, пока
           они не подорожали в очередной раз!</p>
+        </div>
         <img class="catalog-video__video" src="" alt="Видео" width="" height="" loading="lazy">
       </div>
     </section>

@@ -1,6 +1,8 @@
 .login-form__wrapper {
   display: flex;
-  margin-bottom: 56px;
+  flex-wrap: wrap;
+  gap: 64px;
+  margin-bottom: 34px;
 }
 
 
@@ -28,4 +30,18 @@
 
 .login-form__field::placeholder {
   color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: @tablet-width) {
+  .login-form__wrapper {
+    gap: 58px;
+    margin-bottom: 63px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .login-form__wrapper {
+    gap: 100px;
+    margin-bottom: 71px;
+  }
 }

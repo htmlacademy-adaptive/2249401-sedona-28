@@ -1,16 +1,24 @@
 .hero {
+  height: 389px;
   background-color: @light-blue;
 }
 
+.hero__wrapper {
+  position: relative;
+}
+
 .hero__main {
+  height: 389px;
   margin-bottom: 32px;
 }
 
 .hero__form {
+  height: 158px;
   margin-bottom: 36px;
 }
 
 .hero__catalog {
+  height: 158px;
   margin-bottom: 37px;
 }
 
@@ -26,5 +34,47 @@
 
   &--secondary-group {
     margin-top: 101px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .hero {
+    height: 518px;
+  }
+
+  .hero__main {
+    height: 518px;
+    margin-bottom: 47.5px;
+  }
+
+  .hero__form {
+    height: 290px;
+    margin-bottom: 64px;
+  }
+
+  .hero__catalog {
+    height: 290px;
+    margin-bottom: 61px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hero {
+    height: 518px;
+  }
+
+  .hero__main {
+    height: 518px;
+    margin-bottom: 59px;
+  }
+
+  .hero__form {
+    height: 300px;
+    margin-bottom: 115px;
+  }
+
+  .hero__catalog {
+    height: 300px;
+    margin-bottom: 100px;
   }
 }

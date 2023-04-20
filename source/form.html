@@ -4,33 +4,38 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">\
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="form-page__body">
 
   <header class="main-header">
-    <a class="main-header__logo logo">
-      <img class="main-header__logo-image" src="" alt="Седона" width="185" height="96" loading="lazy"></img>
-    </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-nav__list">
-        <li class="main-nav__list-item">
-          <a class="main-nav__link" href="index.html">Главная</a>
-        </li>
-        <li class="main-nav__list-item">
-          <a class="main-nav__link" href="catalog.html">Фото и видео</a>
-        </li>
-        <li class="main-nav__list-item main-nav__list-item--active">
-          <a class="main-nav__link" href="form.html">Форма отзыва</a>
-        </li>
-        <li class="main-nav__list-item">
-          <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-        </li>
-      </ul>
+      <div class="main-nav__wrapper">
+        <button class="main-nav__toggle">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__list-item">
+          </li>
+          <li class="main-nav__list-item main-nav__list-item--active">
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+        <a class="main-nav__logo logo">
+          <img class="main-n__logo-image" src="" alt="Седона" width="185" height="96" loading="lazy"></img>
+        </a>
+      </div>
     </nav>
   </header>
 
@@ -118,7 +123,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="sitesc feedback__section">
+        <fieldset class="sites feedback__section">
           <div class="sites__wrapper">
             <legend class="impression__title title">Посещенные достопримечательности:</legend>
             <ul class="sites__list">

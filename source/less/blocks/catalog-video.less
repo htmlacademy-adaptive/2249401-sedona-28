@@ -3,4 +3,39 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 20px;
+  min-height: 331px;
+}
+
+.catalog-video__text-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 28px;
+  margin: 0 27px;
+  margin-bottom: 38px;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-video__wrapper {
+    min-height: 687px;
+    margin-bottom: 40px;
+  }
+
+  .catalog-video__text-group {
+    margin: 0 161px;
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-video__wrapper {
+    min-height: 687px;
+    margin-bottom: 84px;
+  }
+
+  .catalog-video__text-group {
+    margin: 0 377px;
+    margin-bottom: 64px;
+  }
 }
