@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   height: 389px;
   background-color: @light-blue;
 }
@@ -9,23 +10,24 @@
 
 .hero__main {
   height: 389px;
-  margin-bottom: 32px;
 }
 
 .hero__form {
   height: 158px;
-  margin-bottom: 36px;
 }
 
 .hero__catalog {
   height: 158px;
-  margin-bottom: 37px;
 }
 
 .hero__hero-group {
+  position: absolute;
+  top: 30%;
+  left: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transform: translate(-50%, -30%);
 
   &--main-group {
     margin-top: 90px;
