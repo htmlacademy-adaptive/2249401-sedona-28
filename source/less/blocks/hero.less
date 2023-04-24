@@ -1,11 +1,18 @@
 .hero {
   position: relative;
   height: 389px;
+  width: 100%;
   background-color: @light-blue;
 }
 
 .hero__wrapper {
   position: relative;
+  height: 100%;
+  background: url("../../img/hero-mobile_background.jpg") no-repeat center/cover;
+}
+
+.hero__wrapper--small {
+  background-position: bottom;
 }
 
 .hero__main {
@@ -28,15 +35,6 @@
   flex-direction: column;
   align-items: center;
   transform: translate(-50%, -30%);
-
-  &--main-group {
-    margin-top: 90px;
-    margin-bottom: 80px;
-  }
-
-  &--secondary-group {
-    margin-top: 101px;
-  }
 }
 
 @media (min-width: @tablet-width) {

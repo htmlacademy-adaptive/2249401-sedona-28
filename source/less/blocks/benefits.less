@@ -35,10 +35,8 @@
 .benefits__article-item {
   display: flex;
   flex-wrap: wrap;
-  min-height: 142px;
 
   &--image-disclosed {
-    min-height: 191px;
     background-color: #81b3d2;
     color: #ffffff;
   }
@@ -67,7 +65,8 @@
 .benefits__minor-list {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  align-content: center;
   gap: 25px;
   margin-top: 23px;
   margin-bottom: 46px;
@@ -87,7 +86,6 @@
 
 @media (min-width: @tablet-width) {
   .benefits__intro {
-    min-height: 103px;
     margin-bottom: 55.5px;
   }
 
@@ -103,10 +101,10 @@
   .benefits__article-item {
     display: flex;
     flex-wrap: wrap;
-    min-height: 256px;
+    justify-content: center;
 
     &--image-disclosed {
-      min-height: 191px;
+      flex-wrap: nowrap;
       background-color: #81b3d2;
       color: #ffffff;
     }
@@ -116,7 +114,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 173px;
     margin: 52px 33px 31px;
   }
 
@@ -127,6 +124,7 @@
 
   .benefits__minor-list {
     flex-direction: row;
+    flex-wrap: nowrap;
   }
 
   .benefits__minor-item {
@@ -143,7 +141,6 @@
 
 @media (min-width: @desktop-width) {
   .benefits__intro {
-    min-height: 103px;
     margin-bottom: 44px;
   }
 
@@ -158,10 +155,9 @@
   .benefits__article-item {
     display: flex;
     flex-wrap: wrap;
-    min-height: 142px;
 
     &--image-disclosed {
-      min-height: 191px;
+      flex-wrap: nowrap;
       background-color: #81b3d2;
       color: #ffffff;
     }
@@ -171,7 +167,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 173px;
     margin: 52px 50px 51px;
   }
 
@@ -182,6 +177,7 @@
 
   .benefits__minor-list {
     flex-direction: row;
+    flex-wrap: nowrap;
   }
 
   .benefits__minor-item {
