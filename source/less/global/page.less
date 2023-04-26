@@ -1,0 +1,47 @@
+.page__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+.page__container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+  min-width: 320px;
+  height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px
+    rgba(0, 1, 1, 0.2);
+}
+
+@media (min-width: @tablet-width) {
+  .page__container {
+    min-width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page__container {
+    min-width: 1200px;
+  }
+
+  .page__body {
+    padding: 0 40px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

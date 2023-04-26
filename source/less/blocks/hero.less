@@ -1,30 +1,80 @@
 .hero {
+  position: relative;
+  height: 389px;
+  width: 100%;
   background-color: @light-blue;
 }
 
+.hero__wrapper {
+  position: relative;
+  height: 100%;
+  background: url("../../img/hero-mobile_background.jpg") no-repeat center/cover;
+}
+
+.hero__wrapper--small {
+  background-position: bottom;
+}
+
 .hero__main {
-  margin-bottom: 32px;
+  height: 389px;
 }
 
 .hero__form {
-  margin-bottom: 36px;
+  height: 158px;
 }
 
 .hero__catalog {
-  margin-bottom: 37px;
+  height: 158px;
 }
 
 .hero__hero-group {
+  position: absolute;
+  top: 30%;
+  left: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transform: translate(-50%, -30%);
+}
 
-  &--main-group {
-    margin-top: 90px;
-    margin-bottom: 80px;
+@media (min-width: @tablet-width) {
+  .hero {
+    height: 518px;
   }
 
-  &--secondary-group {
-    margin-top: 101px;
+  .hero__main {
+    height: 518px;
+    margin-bottom: 47.5px;
+  }
+
+  .hero__form {
+    height: 290px;
+    margin-bottom: 64px;
+  }
+
+  .hero__catalog {
+    height: 290px;
+    margin-bottom: 61px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hero {
+    height: 518px;
+  }
+
+  .hero__main {
+    height: 518px;
+    margin-bottom: 59px;
+  }
+
+  .hero__form {
+    height: 300px;
+    margin-bottom: 115px;
+  }
+
+  .hero__catalog {
+    height: 300px;
+    margin-bottom: 100px;
   }
 }

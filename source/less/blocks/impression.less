@@ -1,7 +1,36 @@
+.impression__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
 .impression__list {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .impression__wrapper {
+    row-gap: 28px;
+  }
+
+  .impression__list {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .impression__wrapper {
+    row-gap: 28px;
+  }
+
+  .impression__list {
+    flex-direction: row;
+  }
 }
