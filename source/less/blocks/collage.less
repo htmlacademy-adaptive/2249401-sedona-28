@@ -1,8 +1,13 @@
 .collage__wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 0 auto;
   margin-bottom: 17px;
+}
+
+.collage__img {
+  display: block;
 }
 
 .collage__text-wrapper {
@@ -10,6 +15,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 37px;
   margin-bottom: 50px;
 }
 
@@ -33,14 +39,24 @@
   list-style: none;
 }
 
+.collage__pic {
+  margin: 0;
+}
+
 .collage__pic-main {
+  margin: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
   text-align: left;
 }
 
+.collage__pic-main--number {
+  padding-left: 32px;
+}
+
 .collage__pic-caption {
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
@@ -53,8 +69,22 @@
     margin-bottom: 58px;
   }
 
+  .collage__text-wrapper {
+    max-width: 54%;
+    margin-top: 61px;
+  }
+
   .collage__list {
     flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .collage__remark {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 22px 20px 15px;
+    background-color: #f2f2f2;
   }
 }
 
@@ -63,7 +93,26 @@
     margin-bottom: 62px;
   }
 
+  .collage__text-wrapper {
+    max-width: 38%;
+    margin-top: 100px;
+  }
+
   .collage__list {
     flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .collage__pic {
+    position: relative;
+  }
+
+  .collage__remark {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    padding: 17px 20px 17px 25px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
