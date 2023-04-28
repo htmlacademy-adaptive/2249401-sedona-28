@@ -45,6 +45,7 @@
 
 .benefits__article-item {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 
   &--image-disclosed {
@@ -130,19 +131,13 @@
   .benefits__article-item {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 
     &--image-disclosed {
       flex-wrap: nowrap;
-      background-color: #81b3d2;
-      color: #ffffff;
     }
   }
 
   .benefits__article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin: 52px 33px 31px;
   }
 
@@ -174,9 +169,7 @@
   }
 
   .benefits__article-list {
-    flex-direction: row;
     gap: 100px;
-    margin: 0;
     padding: 52px 50px;
   }
 
@@ -185,47 +178,18 @@
     padding: 0;
   }
 
-  .benefits__list-item:not(:last-child) {
-    border: none;
-  }
-
   .benefits__article-item {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-
-    &--image-disclosed {
-      flex-wrap: nowrap;
-      background-color: #81b3d2;
-      color: #ffffff;
-    }
   }
 
   .benefits__article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin: 52px 50px 51px;
   }
 
-  .benefits__article-image {
-    width: 512px;
-    height: 256px;
-  }
-
-  .benefits__minor-list {
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-
   .benefits__minor-item {
-    align-items: center;
     padding: 0 50px;
     padding-top: 170px;
     padding-bottom: 70px;
-  }
-
-  .benefits__minor-text {
-    text-align: center;
   }
 }
