@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="https://htmlacademy-adaptive.github.io/2249401-sedona-28/7/">
+</head>
+
+<body class="page__body">
+  <div class="page__container">
+    <header class="main-header">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__wrapper">
+          <button class="main-nav__toggle">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__list-item main-nav__list-item--active">
+              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+          <a class="main-nav__logo logo">
+            <img class="main-n__logo-image" src="img/sedona-logo.svg" alt="Седона" width="185" height="96"
+              loading="lazy"></img>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-container catalog">
+      <h1 class="visually-hidden">Седона</h1>
+      <section class="hero hero__catalog">
+        <div class="hero__wrapper hero__wrapper--small">
+          <h2 class="visually-hidden">Приветствие</h2>
+          <div class="hero__hero-group hero__hero-group--secondary-group">
+            <img class="hero__title-image" src="img/greeting-sedona.svg" alt="Sedona" width="282" height="49"
+              loading="lazy">
+          </div>
+        </div>
+      </section>
+
+      <section class="collage">
+        <div class="collage__wrapper">
+          <div class="collage__text-wrapper">
+            <h2 class="collage__heading title">Фото и видео</h2>
+            <p class="collage__text description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
+              забыть о политике и экономике.</p>
+          </div>
+          <ul class="collage__list">
+            <li class="collage__item">
+              <figure class="collage__pic">
+                <img class="collage__img" src="img/catalog-mobile_photo-1.jpg" alt="Неродные просторы" width="280"
+                  height="280" loading="lazy">
+                <figcaption class="collage__remark collage__remark--above">
+                  <div class="collage__pic-text">
+                    <p class="collage__pic-main">Неродные просторы</p>
+                    <p class="collage__pic-caption">Автор фото: Борис</p>
+                  </div>
+                  <p class="collage__pic-main collage__pic-main--number">1350</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="collage__item">
+              <figure class="collage__pic">
+                <img class="collage__img" src="img/catalog-mobile_photo-2.jpg" alt="Местная растительность" width="280"
+                  height="280" loading="lazy">
+                <figcaption class="collage__remark">
+                  <div class="collage__pic-text">
+                    <p class="collage__pic-main">Местная растительность</p>
+                    <p class="collage__pic-caption">Автор фото: Сергей</p>
+                  </div>
+                  <p class="collage__pic-main collage__pic-main--number">143</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="collage__item">
+              <figure class="collage__pic">
+                <img class="collage__img" src="img/catalog-mobile_photo-3.jpg" alt="Дорога на Север" width="280"
+                  height="280" loading="lazy">
+                <figcaption class="collage__remark">
+                  <div class="collage__pic-text">
+                    <p class="collage__pic-main">Дорога на Север</p>
+                    <p class="collage__pic-caption">Автор фото: Петр</p>
+                  </div>
+                  <p class="collage__pic-main collage__pic-main--number">96</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="collage__item">
+              <figure class="collage__pic">
+                <img class="collage__img" src="img/catalog-mobile_photo-4.jpg" alt="Мост Дьявола" width="280"
+                  height="280" loading="lazy">
+                <figcaption class="collage__remark">
+                  <div class="collage__pic-text">
+                    <p class="collage__pic-main">Мост Дьявола</p>
+                    <p class="collage__pic-caption">Автор фото: Антон</p>
+                  </div>
+                  <p class="collage__pic-main collage__pic-main--number">254</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="catalog-video">
+        <div class="catalog-video__wrapper">
+          <div class="catalog-video__text-group">
+            <h2 class="catalog-video__heading title">Все еще сомневаетесь?</h2>
+            <p class="catalog-video__text description">Смотрите видеопрезентацию и скорее за билетами, пока
+              они не подорожали в очередной раз!</p>
+          </div>
+          <img class="catalog-video__video" src="img/catalog-mobile_video.jpg" alt="Видео" width="280" height="177"
+            loading="lazy">
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__contacts footer-contacts">
+          <p class="footer-contacts__hashtag">#visitsedona</p>
+        </div>
+
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                  <g clip-path="url(#a)">
+                    <path fill="#fff" fill-rule="evenodd"
+                      d="M23.45 5.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V5.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55C6.32 17.34 9.38 19 12.15 19c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 18.22 19.4 19 20.41 19h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z"
+                      clip-rule="evenodd" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 0h24v24H0z" />
+                    </clipPath>
+                  </defs>
+                </svg></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                  <path fill="#fff"
+                    d="m22.44 4.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L7.01 13.32l-4.76-1.49c-1.04-.32-1.05-1.03.22-1.53L21.1 3.11c.87-.32 1.62.2 1.34 1.51Z" />
+                </svg></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                  <path fill="#fff"
+                    d="M19.18 5H4.81C3.31 5 2 6.3 2 7.8v8.3C2 17.7 3.3 19 4.81 19h14.37A2.8 2.8 0 0 0 22 16.2V7.8c.1-1.5-1.2-2.8-2.8-2.8ZM9.03 15.4V8.6l6.84 3.4-6.84 3.4Z" />
+                </svg></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main-footer__copyright copyright">
+          <b class="copyright__text description">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="academy-logo" src="img/htmlacademy.svg" alt="HTML Academy" width="28" height="35"
+              loading="lazy">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main-nav.js"></script>
+</body>
+
+</html>
