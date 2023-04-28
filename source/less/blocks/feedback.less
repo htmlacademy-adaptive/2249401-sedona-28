@@ -6,9 +6,12 @@
 .feedback__section {
   margin: 0;
   padding: 0;
-  width: 100%;
   border: none;
-  box-sizing: border-box;
+}
+
+.feedback__request {
+  display: flex;
+  justify-content: center;
 }
 
 .feedback__field-text {
@@ -17,13 +20,6 @@
 
 @media (min-width: @tablet-width) {
   .feedback__wrapper {
-    margin: auto 60px;
-  }
-}
-
-
-@media (min-width: @tablet-width) {
-  .feedback__wrapper {
-    margin: auto 120px;
+    margin: 0 auto;
   }
 }
