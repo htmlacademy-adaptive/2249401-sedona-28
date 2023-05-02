@@ -43,7 +43,7 @@
   position: absolute;
   top: 0;
   left: 50%;
-  background-color: @light-blue;
+  z-index: 1;
   height: 96px;
   transform: translateX(-50%);
 }
@@ -196,6 +196,10 @@
     &--active {
       color: #766357;
     }
+  }
+
+  .main-nav__list-item:nth-child(4n+3) {
+    margin: 0 0 0 20%;
   }
 
   .main-nav__link {
