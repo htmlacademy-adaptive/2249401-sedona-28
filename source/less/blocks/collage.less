@@ -8,6 +8,8 @@
 
 .collage__img {
   display: block;
+  width: 100%;
+  object-fit: cover;
 }
 
 .collage__text-wrapper {
@@ -41,6 +43,10 @@
 
 .collage__item {
   margin: 0;
+}
+
+.collage__item picture {
+  width: 100%;
 }
 
 .collage__pic-main {
@@ -98,8 +104,14 @@
   }
 
   .collage__list {
-    flex-direction: row;
-    justify-content: flex-start;
+    display: grid;
+    grid-template: repeat(3, 1fr) / 50% 50%;
+    gap: 0;
+  }
+
+  .collage__item--broad-item {
+    grid-column: 1/3;
+    grid-row: 1/2;
   }
 
   .collage__remark {
@@ -119,6 +131,15 @@
   .collage__text-wrapper {
     max-width: 38%;
     margin-top: 100px;
+  }
+
+  .collage__list {
+    grid-template: repeat(2, 1fr) / 1fr 1fr 1fr;
+  }
+
+  .collage__item--broad-item {
+    grid-column: 1/4;
+    grid-row: 1/2;
   }
 
   .collage__item {

@@ -8,7 +8,11 @@
 .hero__wrapper {
   position: relative;
   height: 100%;
-  background: url("../../img/hero-mobile_background.jpg") no-repeat center/cover;
+  background: url("../../img/back-mobile.jpg") no-repeat center/cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/back-mobile@2x.jpg");
+  }
 }
 
 .hero__wrapper--small {
@@ -38,8 +42,12 @@
 }
 
 @media (min-width: @tablet-width) {
-  .hero {
-    height: 518px;
+  .hero__wrapper {
+    background: url("../../img/back-desktop.jpg") no-repeat center/cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-desktop@2x.jpg");
+    }
   }
 
   .hero__main {
@@ -56,14 +64,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .hero {
-    height: 518px;
-  }
-
-  .hero__main {
-    height: 518px;
-  }
-
   .hero__form {
     height: 300px;
   }

@@ -16,6 +16,29 @@
   margin-bottom: 38px;
 }
 
+.catalog-video__video {
+  display: flex;
+  width: 100%;
+  object-fit: cover;
+}
+
+.catalog-video__video-link {
+  position: relative;
+}
+
+.catalog-video__video-link::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "";
+  width: 48px;
+  height: 54px;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  background-color: rgba(255, 255, 255, 0.7);
+  transform: translate(-50%, -50%);
+}
+
+
 @media (min-width: @tablet-width) {
   .catalog-video__wrapper {
     margin-bottom: 40px;
