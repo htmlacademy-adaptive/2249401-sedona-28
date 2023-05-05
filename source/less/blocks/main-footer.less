@@ -8,11 +8,14 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 30px;
   flex-wrap: wrap;
   margin: 33px 0;
 }
 
 .main-footer__hashtag {
+  display: flex;
+  margin: 0;
   font-weight: 700;
   font-size: 21px;
   line-height: 1.24;
@@ -22,6 +25,7 @@
 @media (min-width: @tablet-width) {
   .main-footer__wrapper {
     flex-direction: row;
+    gap: 0;
     margin: 36px 60px;
   }
 }

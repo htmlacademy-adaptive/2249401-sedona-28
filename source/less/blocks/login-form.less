@@ -2,14 +2,39 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 64px;
-  margin-bottom: 34px;
 }
 
 .login-form__group {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 79px;
+}
+
+.login-form__group--contacts {
+  width: 100%;
+}
+
+.login-form__group::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: url("../../img/phone.svg");
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+}
+
+.login-form__group--mail::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: url("../../img/mail.svg");
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
 }
 
 .login-form__label {
@@ -32,6 +57,16 @@
 
 .login-form__field::placeholder {
   color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: @mobile-width-only) {
+  .login-form__group:last-child {
+    margin-bottom: 39px;
+  }
+
+  .login-form__wrapper-item:last-child .login-form__group:last-child {
+    margin-bottom: 34px;
+  }
 }
 
 @media (min-width: @tablet-width) {

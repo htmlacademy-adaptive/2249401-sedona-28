@@ -3,12 +3,12 @@
   flex-direction: column;
   align-items: center;
   row-gap: 20px;
-  margin-bottom: 49px;
+  margin-bottom: 24px;
 }
 
 .sites__list {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 16px;
   margin: 0;
@@ -17,7 +17,26 @@
 }
 
 .sites__item {
-  padding-left: 62px;
+  min-width: 224px;
+}
+
+.sites__checkbox {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 9%;
+}
+
+.sites__input:checked + .sites__checkbox::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 22px;
+  height: 16px;
+  background: url("../../img/check-tick.svg") no-repeat center / cover;
+  content: "";
+  transform: translate(-50%, -50%);
 }
 
 @media (min-width: @tablet-width) {
@@ -28,7 +47,8 @@
 
   .sites__list {
     flex-direction: row;
-    gap: 32px;
+    column-gap: 32px;
+    margin: 0 84px;
   }
 }
 
