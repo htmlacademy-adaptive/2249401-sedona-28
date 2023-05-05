@@ -79,12 +79,26 @@
   flex-wrap: wrap;
   align-content: center;
   gap: 25px;
-  margin-top: 23px;
-  margin-bottom: 46px;
+  margin: 23px 18px 46px;
 }
 
 .benefits__minor-item {
   padding-left: 47px;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  background-position: top left;
+
+  &--house {
+    background-image: url("../../img/based-house.svg");
+  }
+
+  &--food {
+    background-image: url("../../img/based-burger.svg");
+  }
+
+  &--present {
+    background-image: url("../../img/based-present.svg");
+  }
 }
 
 .benefits__minor-heading {
@@ -110,6 +124,22 @@
 @media (max-width: @mobile-width-only) {
   br {
     display: none;
+  }
+
+  .benefits__article-item--decorated {
+    position: relative;
+  }
+
+  .benefits__article-item--decorated::before {
+    position: absolute;
+    top: -10px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 37px;
+    background-image: url("../../img/intro-secondtriangle.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
   }
 }
 
@@ -154,6 +184,7 @@
   .benefits__minor-list {
     flex-direction: row;
     flex-wrap: nowrap;
+    margin: 0;
   }
 
   .benefits__minor-item {
@@ -161,6 +192,8 @@
     padding: 0 33px;
     padding-top: 160px;
     padding-bottom: 60px;
+    background-position: center 25%;
+    background-size: 80px 80px;
   }
 
   .benefits__minor-text {

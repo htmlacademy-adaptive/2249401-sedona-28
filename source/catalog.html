@@ -35,8 +35,9 @@
             </li>
           </ul>
           <a class="main-nav__logo" href="index.html">
-            <img class="main-n__logo-image" src="img/sedona-logo.svg" alt="Седона" width="185" height="96"
-              loading="lazy"></img>
+            <svg class="main-nav__logo-image" role="img" aria-label="Логотип сайта 'Седона'" width="185" height="96">
+              <use xlink:href="#site-logo"></use>
+            </svg>
           </a>
         </div>
       </nav>
@@ -44,13 +45,13 @@
 
     <main class="main-container catalog">
       <h1 class="visually-hidden">Седона</h1>
-      <section class="hero hero__catalog">
+      <section class="hero">
         <div class="hero__wrapper hero__wrapper--small">
           <h2 class="visually-hidden">Приветствие</h2>
-          <div class="hero__hero-group hero__hero-group--secondary-group">
-            <img class="hero__title-image" src="img/greeting-sedona.svg" alt="Sedona" width="282" height="49"
-              loading="lazy">
-          </div>
+          <svg class="hero__hero-group hero__hero-group--smaller" role="img" aria-label="Welcome to the gorgeous Sedona"
+            width="461" height="350" viewBox="0 0 461 350">
+            <use xlink:href="#hero-smallgreeting"></use>
+          </svg>
         </div>
       </section>
 
