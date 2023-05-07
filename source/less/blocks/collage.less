@@ -52,12 +52,23 @@
   text-align: left;
 }
 
-.collage__pic-main--button {
+.collage__pic-button {
+  position: relative;
   padding: 0;
   padding-left: 32px;
   color: inherit;
   background-color: transparent;
   border: none;
+}
+
+.collage__pic-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 23px;
+  height: 21px;
+  fill: currentColor;
+  transform: translateY(-50%);
 }
 
 .collage__pic-caption {
