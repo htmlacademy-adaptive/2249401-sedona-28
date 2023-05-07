@@ -89,11 +89,13 @@
                 <legend class="login-form__title title">Контактная информация:</legend>
                 <p class="login-form__group login-form__group--contacts">
                   <label class="login-form__label description" for="phone">Контактный телефон*:</label>
-                  <input class="login-form__field title" id="phone" type="tel" placeholder="Введите телефон">
+                  <input class="login-form__field login-form__field--contacts title" id="phone" type="tel"
+                    placeholder="Введите телефон">
                 </p>
                 <p class="login-form__group login-form__group--mail">
                   <label class="login-form__label description" for="mail">Электронная почта*:</label>
-                  <input class="login-form__field title" id="mail" type="email" placeholder="Введите e-mail">
+                  <input class="login-form__field login-form__field--mail title" id="mail" type="email"
+                    placeholder="Введите e-mail">
                 </p>
               </fieldset>
             </div>
@@ -171,8 +173,8 @@
             <div class="emotions__wrapper">
               <legend class="emotions__title title">Опишите свои эмоции:</legend>
               <label class="visually-hidden" for="feedback-text">Развернутый ответ</label>
-              <textarea class="emotions__feedback-text title"
-                id="feedback-text">Опишите подробно все свои восторги</textarea>
+              <textarea class="emotions__feedback-text title" id="feedback-text"
+                placeholder="Опишите подробно все свои восторги"></textarea>
               <div class="emotions__bottom-wrapper">
                 <button class="based-button emotions__button" type="submit">Отправить отзыв</button>
                 <small class="feedback__legend description">* — Обязательные поля</small>
@@ -220,28 +222,25 @@
       </div>
     </footer>
 
-    <div class="modal modal--closed">
+    <div class="modal">
       <section class="modal__content modal__error">
         <div class="modal__error-text">
           <h2 class="modal__title title">Что-то пошло не так!</h2>
           <p class="modal__message description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
           </p>
         </div>
-        <div class="modal__button modal__button--error">
-          <button class="based-button modal__error-button" type="button">Ок</button>
-        </div>
+        <button class="based-button modal__error-button" type="button">Ок</button>
       </section>
     </div>
-    <div class="modal modal--closed">
+    <div class="modal">
       <section class="modal__content modal__normal">
         <div class="modal__normal-text">
           <h2 class="modal__title title">Ваш отзыв отправлен</h2>
-          <p class="modal__message description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время
-            мы
-            опубликуем
-            его на сайте.</p>
+          <p class="modal__message description">
+            Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+          </p>
         </div>
-        <div class="modal__button">
+        <div class="modal__button-outer">
           <button class="based-button modal__normal-button" type="button">Закрыть окно</button>
         </div>
       </section>

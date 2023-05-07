@@ -19,21 +19,27 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  content: url("../../img/phone.svg");
+  content: "";
   width: 58px;
   height: 58px;
+  background-image: url("../../img/phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 18px;
   background-color: #e6e6e6;
 }
 
 .login-form__group--mail::after {
   position: absolute;
-  top: 0;
-  left: 0;
   bottom: 0;
   right: 0;
-  content: url("../../img/mail.svg");
+  content: "";
   width: 58px;
   height: 58px;
+  background-image: url("../../img/mail.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 18px;
   background-color: #e6e6e6;
 }
 
@@ -53,10 +59,30 @@
   background-color: #f2f2f2;
   color: #000000;
   border: none;
+  cursor: pointer;
+
+  &--contacts,
+  &--mail {
+    padding-right: 60px;
+  }
 }
 
 .login-form__field::placeholder {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.login-form__field:hover {
+  background-color: #e5e5e5;
+}
+
+.login-form__field:active {
+  background-color: transparent;
+  outline: 4px solid #e5e5e5;
+  outline-offset: -4px;
+}
+
+.login-form__field:focus-visible {
+  outline-color: #e5e5e5;
 }
 
 @media (max-width: @mobile-width-only) {
