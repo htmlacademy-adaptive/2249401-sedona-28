@@ -130,7 +130,6 @@
   .main-nav--opened .main-nav__list {
     z-index: 2;
     gap: 1px;
-    min-height: 50vh;
     background-color: @light-blue;
   }
 
@@ -189,7 +188,7 @@
       color: #81b3d2;
     }
 
-    &:disabled {
+    &:active {
       color: rgba(0, 0, 0, 0.3);
     }
 
@@ -230,21 +229,8 @@
   }
 
   .main-nav__list-item {
-    min-height: inherit;
     width: 240px;
     background-color: transparent;
-
-    &:hover {
-      color: #81b3d2;
-    }
-
-    &:disabled {
-      color: rgba(0, 0, 0, 0.3);
-    }
-
-    &--active {
-      color: #766357;
-    }
   }
 
   .main-nav__link {

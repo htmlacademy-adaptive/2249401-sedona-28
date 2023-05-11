@@ -1,3 +1,24 @@
-.copyright__text {
+.copyright {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
   color: #000000;
+}
+
+.copyright__text {
+  color: currentColor;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.copyright__icon {
+  fill: currentColor;
+}
+
+.copyright:hover {
+  color: @light-blue;
+}
+
+.copyright:active {
+  color: #b3b3b3;
 }

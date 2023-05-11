@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 20px;
   margin-bottom: 17px;
 }
 
@@ -36,17 +36,12 @@
   flex-wrap: wrap;
   row-gap: 50px;
   margin: 0;
-  margin-bottom: 25px;
   padding: 0;
   list-style: none;
 }
 
 .collage__item {
   margin: 0;
-}
-
-.collage__item picture {
-  width: 100%;
 }
 
 .collage__pic-main {
@@ -57,12 +52,23 @@
   text-align: left;
 }
 
-.collage__pic-main--button {
+.collage__pic-button {
+  position: relative;
   padding: 0;
   padding-left: 32px;
   color: inherit;
   background-color: transparent;
   border: none;
+}
+
+.collage__pic-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 23px;
+  height: 21px;
+  fill: currentColor;
+  transform: translateY(-50%);
 }
 
 .collage__pic-caption {
@@ -95,6 +101,7 @@
 
 @media (min-width: @tablet-width) {
   .collage__wrapper {
+    margin: 0 auto;
     margin-bottom: 58px;
   }
 
@@ -107,6 +114,10 @@
     display: grid;
     grid-template: repeat(3, 1fr) / 50% 50%;
     gap: 0;
+  }
+
+  .collage__item picture {
+    width: 100%;
   }
 
   .collage__item--broad-item {
@@ -148,7 +159,7 @@
 
   .collage__remark {
     position: absolute;
-    top: 73%;
+    bottom: 0;
     left: 0;
     padding: 17px 20px 17px 25px;
     color: #ffffff;

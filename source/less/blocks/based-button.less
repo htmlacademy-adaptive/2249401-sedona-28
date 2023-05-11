@@ -2,14 +2,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 58px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 1.24;
   text-transform: uppercase;
+  text-decoration: none;
   text-align: center;
   color: rgba(255, 255, 255, 1);
   background-color: @light-blue;
   border: none;
   box-sizing: border-box;
+  cursor: pointer;
+}
+
+.based-button:hover {
+  background-color: #669ec0;
+}
+
+.based-button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.based-button:disabled {
+  background-color: #e5e5e5;
 }
