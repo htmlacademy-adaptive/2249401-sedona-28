@@ -15,32 +15,19 @@
   width: 100%;
 }
 
-.login-form__group--contacts::after {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  content: "";
-  width: 58px;
-  height: 58px;
-  background-image: url("../../img/phone.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 18px 18px;
-  background-color: #e6e6e6;
+.login-form__field-wrapper {
+  position: relative;
 }
 
-.login-form__group--mail::after {
+.login-form__icon {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  content: "";
+  top: 50%;
+  left: 100%;
+  height: 100%;
   width: 58px;
-  height: 58px;
-  background-image: url("../../img/mail.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 18px 18px;
+  padding: 20px;
   background-color: #e6e6e6;
+  transform: translate(-100%, -50%);
 }
 
 .login-form__label {

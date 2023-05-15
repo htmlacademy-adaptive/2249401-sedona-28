@@ -82,8 +82,11 @@
 
 .collage__remark {
   display: flex;
+  flex-direction: column;
+  gap: 11px;
   justify-content: space-between;
   width: 100%;
+  margin: 15px auto 25px;
 }
 
 @media (max-width: @mobile-width-only) {
@@ -127,8 +130,10 @@
 
   .collage__remark {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    margin: 0;
     padding: 22px 20px 15px;
     background-color: #f2f2f2;
   }

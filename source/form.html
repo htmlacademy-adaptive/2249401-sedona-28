@@ -89,13 +89,22 @@
                 <legend class="login-form__title title">Контактная информация:</legend>
                 <p class="login-form__group login-form__group--contacts">
                   <label class="login-form__label description" for="phone">Контактный телефон*:</label>
-                  <input class="login-form__field login-form__field--contacts title" id="phone" type="tel"
-                    placeholder="Введите телефон">
+                  <span class="login-form__field-wrapper">
+                    <input class="login-form__field title" id="phone" type="tel" placeholder="Введите телефон">
+                    <svg class="login-form__icon" width="18" height="18" viewBox="0 0 18 18">
+                      <use xlink:href="img/sprite.svg#phone"></use>
+                    </svg>
+                  </span>
                 </p>
                 <p class="login-form__group login-form__group--mail">
                   <label class="login-form__label description" for="mail">Электронная почта*:</label>
-                  <input class="login-form__field login-form__field--mail title" id="mail" type="email"
-                    placeholder="Введите e-mail">
+                  <span class="login-form__field-wrapper">
+                    <input class="login-form__field login-form__field--mail title" id="mail" type="email"
+                      placeholder="Введите e-mail">
+                    <svg class="login-form__icon" width="18" height="18" viewBox="0 0 18 18">
+                      <use xlink:href="img/sprite.svg#mail"></use>
+                    </svg>
+                  </span>
                 </p>
               </fieldset>
             </div>
