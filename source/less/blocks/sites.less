@@ -49,6 +49,29 @@
     column-gap: 32px;
     padding: 0 84px;
   }
+
+  .sites__title {
+    position: relative;
+    width: 100%;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 50%;
+      content: "";
+      background-color: #dbdbdb;
+      height: 1px;
+      width: 123px;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -63,5 +86,12 @@
 
   .sites__item {
     min-width: 0;
+  }
+
+  .sites__title {
+    &::before,
+    ::after {
+      width: 280px;
+    }
   }
 }

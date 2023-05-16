@@ -44,10 +44,40 @@
   .emotions__button {
     width: 50%;
   }
+
+  .emotions__title {
+    position: relative;
+    width: 100%;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 50%;
+      content: "";
+      background-color: #dbdbdb;
+      height: 1px;
+      width: 123px;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
   .emotions__wrapper {
     margin-bottom: 64px;
+  }
+
+  .emotions__title {
+    &::before,
+    ::after {
+      width: 280px;
+    }
   }
 }

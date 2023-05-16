@@ -84,9 +84,21 @@
 
 @media (min-width: @tablet-width) {
   .login-form__wrapper {
+    position: relative;
     flex-wrap: nowrap;
     gap: 58px;
     margin-bottom: 63px;
+  }
+
+  .login-form__wrapper::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    display: flex;
+    width: 1px;
+    min-height: 100%;
+    background-color: #dbdbdb;
   }
 
   .login-form__wrapper-item {
