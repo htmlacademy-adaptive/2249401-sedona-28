@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
@@ -37,7 +37,7 @@
           </ul>
           <a class="main-nav__logo" href="index.html">
             <svg class="main-nav__logo-image" role="img" aria-label="Логотип сайта 'Седона'" width="185" height="96">
-              <use xlink:href="img/sprite.svg#site-logo"></use>
+              <use xlink:href="img/sprite.svg#sedona-logo"></use>
             </svg>
           </a>
         </div>
@@ -51,7 +51,7 @@
           <h2 class="visually-hidden">Приветствие</h2>
           <svg class="hero__hero-group" role="img" aria-label="Welcome to the gorgeous Sedona" width="461" height="350"
             viewBox="0 0 461 350">
-            <use xlink:href="img/sprite.svg#hero-greeting"></use>
+            <use xlink:href="img/sprite.svg#greeting-sedona"></use>
           </svg>
         </div>
       </section>
@@ -80,24 +80,40 @@
             </picture>
           </div>
           <dl class="benefits__minor-list">
-            <div class="benefits__minor-item benefits__minor-item--house">
-              <dt class="benefits__minor-heading benefits__minor-text title">Жилье</dt>
-              <dd class="benefits__minor-description benefits__minor-text description description__article-text">
-                Рекомендуем пожить в настоящем
-                мотеле, все как в кино!</dd>
+            <div class="benefits__minor-item">
+              <svg class="benefits__minor-icon" width="80" height="80" viewBox="0 0 80 80">
+                <use xlink:href="img/sprite.svg#based-house"></use>
+              </svg>
+              <div class="benefits__minor-group">
+                <dt class="benefits__minor-heading benefits__minor-text title">Жилье</dt>
+                <dd class="benefits__minor-description benefits__minor-text description description__article-text">
+                  Рекомендуем пожить в настоящем
+                  мотеле, все как в кино!</dd>
+              </div>
             </div>
-            <div class="benefits__minor-item benefits__minor-item--food">
-              <dt class="benefits__minor-heading benefits__minor-text title">Еда</dt>
-              <dd class="benefits__minor-description benefits__minor-text description description__article-text">Всегда
-                заказывайте ФИРМЕННЫЙ
-                БУРГЕР,Вы НЕ разочаруетесь!</dd>
+            <div class="benefits__minor-item">
+              <svg class="benefits__minor-icon" width="80" height="80" viewBox="0 0 80 80">
+                <use xlink:href="img/sprite.svg#based-burger"></use>
+              </svg>
+              <div class="benefits__minor-group">
+                <dt class="benefits__minor-heading benefits__minor-text title">Еда</dt>
+                <dd class="benefits__minor-description benefits__minor-text description description__article-text">
+                  Всегда
+                  заказывайте ФИРМЕННЫЙ
+                  БУРГЕР,Вы НЕ разочаруетесь!</dd>
+              </div>
             </div>
-            <div class="benefits__minor-item benefits__minor-item--present">
-              <dt class="benefits__minor-heading benefits__minor-text title">Сувениры</dt>
-              <dd class="benefits__minor-description benefits__minor-text description description__article-text">Не
-                только
-                китайского,
-                но и местного производства!</dd>
+            <div class="benefits__minor-item">
+              <svg class="benefits__minor-icon" width="80" height="80" viewBox="0 0 80 80">
+                <use xlink:href="img/sprite.svg#based-present"></use>
+              </svg>
+              <div class="benefits__minor-group">
+                <dt class="benefits__minor-heading benefits__minor-text title">Сувениры</dt>
+                <dd class="benefits__minor-description benefits__minor-text description description__article-text">Не
+                  только
+                  китайского,
+                  но и местного производства!</dd>
+              </div>
             </div>
           </dl>
           <div class="benefits__article-item benefits__article-item--image-disclosed">
@@ -168,19 +184,19 @@
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
-                <use xlink:href="img/sprite.svg#vk-logo"></use>
+                <use xlink:href="img/sprite.svg#vk"></use>
               </svg></a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
-                <use xlink:href="img/sprite.svg#tg-logo"></use>
+                <use xlink:href="img/sprite.svg#telegram"></use>
               </svg></a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
-                <use xlink:href="img/sprite.svg#youtube-logo"></use>
+                <use xlink:href="img/sprite.svg#youtube"></use>
               </svg></a>
           </li>
         </ul>
@@ -188,7 +204,7 @@
         <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <b class="copyright__text description">Разработано:</b>
           <svg class="copyright__icon" role="img" aria-label="Логотип HTML Academy" width="28" height="35">
-            <use xlink:href="img/sprite.svg#academy-logo"></use>
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </div>

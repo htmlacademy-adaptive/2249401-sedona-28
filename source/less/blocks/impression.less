@@ -55,6 +55,29 @@
   .impression__item {
     width: 280px;
   }
+
+  .impression__title {
+    position: relative;
+    width: 100%;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 50%;
+      content: "";
+      background-color: #dbdbdb;
+      height: 1px;
+      width: 123px;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -65,5 +88,12 @@
   .impression__list {
     gap: 28px;
     margin: 0;
+  }
+
+  .impression__title {
+    &::before,
+    &::after {
+      width: 280px;
+    }
   }
 }

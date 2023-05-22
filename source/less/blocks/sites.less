@@ -8,7 +8,6 @@
 
 .sites__list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 16px;
   margin: 0;
@@ -46,12 +45,32 @@
   }
 
   .sites__list {
-    flex-direction: row;
+    justify-content: space-between;
     column-gap: 32px;
+    padding: 0 84px;
   }
 
-  .sites__item {
-    min-width: 0;
+  .sites__title {
+    position: relative;
+    width: 100%;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 50%;
+      content: "";
+      background-color: #dbdbdb;
+      height: 1px;
+      width: 123px;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
   }
 }
 
@@ -61,7 +80,18 @@
   }
 
   .sites__list {
-    flex-direction: row;
-    gap: 64px;
+    column-gap: 64px;
+    padding: 0;
+  }
+
+  .sites__item {
+    min-width: 0;
+  }
+
+  .sites__title {
+    &::before,
+    &::after {
+      width: 280px;
+    }
   }
 }
