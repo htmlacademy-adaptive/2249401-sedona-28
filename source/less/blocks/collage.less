@@ -133,6 +133,11 @@
     max-height: 267px;
   }
 
+  .collage__item {
+    display: flex;
+    flex-direction: column;
+  }
+
   .collage__item--broad-item .collage__img {
     min-height: 400px;
   }
@@ -149,6 +154,7 @@
   .collage__remark {
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
     justify-content: space-between;
     align-items: start;
     width: 100%;
