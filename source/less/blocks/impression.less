@@ -45,6 +45,23 @@
   transform: translate(-50%, -50%);
 }
 
+.impression__radio:hover {
+  background-color: #e5e5e5;
+}
+
+.impression__radio:active {
+  background-color: #d5d5d5;
+}
+
+.impression__radio:active.impression__radio::before {
+  opacity: 0.3;
+}
+
+.impression__input:focus-visible + .impression__radio {
+  border: 2px solid #333333;
+  outline-offset: 2px;
+}
+
 @media (min-width: @tablet-width) {
   .impression .impression__wrapper {
     gap: 28px;
