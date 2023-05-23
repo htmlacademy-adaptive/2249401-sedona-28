@@ -1,16 +1,17 @@
-.emotions__wrapper {
+.emotions .emotions__wrapper {
   display: flex;
   flex-direction: column;
-  margin-bottom: 22px;
 }
 
 .emotions__feedback-text {
-  margin-bottom: 48px;
+  margin-bottom: 56px;
+  padding: 16px;
   min-height: 150px;
   width: 100%;
   color: rgba(0, 0, 0, 0.3);
   background-color: #f2f2f2;
   resize: none;
+  text-align: left;
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
@@ -67,6 +68,10 @@
     &::after {
       right: 0;
     }
+  }
+
+  .emotions__feedback-text {
+    margin-bottom: 48px;
   }
 }
 

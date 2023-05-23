@@ -46,6 +46,14 @@
   transform: translate(-50%, -50%);
 }
 
+@media (max-width: @mobile-width-only) {
+  .hero__wrapper--small .hero__hero-group {
+    top: 45%;
+    width: 229px;
+    height: auto;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .hero__wrapper {
     background-image: url("../../img/back-desktop.jpg");

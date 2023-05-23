@@ -4,11 +4,27 @@
   flex-wrap: wrap;
 }
 
+.login-form__wrapper-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-form__wrapper .login-form__wrapper-item {
+  padding-bottom: 39px;
+}
+
+.login-form__wrapper .login-form__wrapper-item:nth-child(2n) {
+  padding-bottom: 34px;
+}
+
+
 .login-form__group {
   position: relative;
   display: flex;
   flex-direction: column;
   min-height: 79px;
+  margin: 0;
 }
 
 .login-form__group--contacts {
@@ -32,10 +48,11 @@
 
 .login-form__label {
   align-self: flex-start;
+  padding-left: 16px;
 }
 
-.login-form__group:not(:last-child) {
-  margin-bottom: 16px;
+.login-form__title {
+  padding-top: 23px;
 }
 
 .login-form__field {
@@ -70,16 +87,6 @@
 
 .login-form__field:focus-visible {
   outline-color: #e5e5e5;
-}
-
-@media (max-width: @mobile-width-only) {
-  .login-form__group:last-child {
-    margin-bottom: 39px;
-  }
-
-  .login-form__wrapper-item:last-child .login-form__group:last-child {
-    margin-bottom: 34px;
-  }
 }
 
 @media (min-width: @tablet-width) {
