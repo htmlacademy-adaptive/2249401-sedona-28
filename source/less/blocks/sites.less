@@ -42,8 +42,14 @@
   transform: translate(-50%, -50%);
 }
 
+@media (max-width: @mobile-width-only) {
+  .sites__title br {
+    display: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
-  .sites__wrapper {
+  .sites .sites__wrapper {
     row-gap: 28px;
     margin-bottom: 42px;
   }
@@ -57,6 +63,7 @@
   .sites__title {
     position: relative;
     width: 100%;
+    margin-bottom: 28px;
 
     &::before,
     &::after {
