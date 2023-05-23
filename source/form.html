@@ -59,6 +59,7 @@
         <div class="feedback__wrapper">
           <h2 class="visually-hidden">Форма отзыва</h2>
           <section class="feedback__section feedback__request request">
+            <h3 class="visually-hidden">Просьба об отзыве</h3>
             <div class="request__wrapper">
               <p class="request__title title">Оставьте свой отзыв</p>
               <p class="description request__description">Помогите нашим отелям стать лучше! оставьте отзыв о них,а
@@ -67,6 +68,7 @@
           </section>
 
           <section class="login-form">
+            <h3 class="visually-hidden">Анкета</h3>
             <div class="login-form__wrapper">
               <fieldset class="login-form__wrapper-item feedback__section">
                 <legend class="login-form__title title">Представьтесь:</legend>
@@ -76,12 +78,12 @@
                 </p>
                 <p class="login-form__group">
                   <label class="login-form__label description" for="surname">Фамилия*:</label>
-                  <input class="login-form__field title" id="name" type="text" placeholder="Введите фамилию"
+                  <input class="login-form__field title" id="surname" type="text" placeholder="Введите фамилию"
                     value="Пустота">
                 </p>
                 <p class="login-form__group">
                   <label class="login-form__label description" for="fathername">Отчество:</label>
-                  <input class="login-form__field title" id="name" type="text" placeholder="Введите отчество"
+                  <input class="login-form__field title" id="fathername" type="text" placeholder="Введите отчество"
                     value="Викторович">
                 </p>
               </fieldset>
@@ -110,8 +112,9 @@
             </div>
           </section>
 
-          <fieldset class="impression feedback__section">
-            <div class="impression__wrapper">
+          <section class="impression feedback__section">
+            <h3 class="visually-hidden">Оценка впечатления</h3>
+            <fieldset class="impression__wrapper">
               <legend class="impression__title title">Ваше общее впечатление:</legend>
               <ul class="impression__list">
                 <li class="impression__item">
@@ -139,11 +142,12 @@
                   </label>
                 </li>
               </ul>
-            </div>
-          </fieldset>
+            </fieldset>
+          </section>
 
-          <fieldset class="sites feedback__section">
-            <div class="sites__wrapper">
+          <section class="sites feedback__section">
+            <h3 class="visually-hidden">Оценка достопримечательностей</h3>
+            <fieldset class="sites__wrapper">
               <legend class="sites__title title">Посещенные достопримечательности:</legend>
               <ul class="sites__list">
                 <li class="sites__item">
@@ -175,11 +179,12 @@
                   </label>
                 </li>
               </ul>
-            </div>
-          </fieldset>
+            </fieldset>
+          </section>
 
-          <fieldset class="emotions feedback__section">
-            <div class="emotions__wrapper">
+          <section class="emotions feedback__section">
+            <h3 class="visually-hidden">Оценка своих эмоций</h3>
+            <fieldset class="emotions__wrapper">
               <legend class="emotions__title title">Опишите свои эмоции:</legend>
               <label class="visually-hidden" for="feedback-text">Развернутый ответ</label>
               <textarea class="emotions__feedback-text title" id="feedback-text"
@@ -188,8 +193,8 @@
                 <button class="based-button emotions__button" type="submit">Отправить отзыв</button>
                 <small class="feedback__legend description">* — Обязательные поля</small>
               </div>
-            </div>
-          </fieldset>
+            </fieldset>
+          </section>
         </div>
       </form>
 
