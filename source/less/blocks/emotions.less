@@ -1,19 +1,23 @@
-.emotions__wrapper {
+.emotions .emotions__wrapper {
   display: flex;
   flex-direction: column;
-  margin-bottom: 22px;
 }
 
 .emotions__feedback-text {
-  margin-bottom: 48px;
+  margin-bottom: 56px;
+  padding: 16px;
   min-height: 150px;
   width: 100%;
   color: rgba(0, 0, 0, 0.3);
   background-color: #f2f2f2;
   resize: none;
+  text-align: left;
+  border: none;
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    line-height: 1.44;
   }
 }
 
@@ -49,6 +53,7 @@
   .emotions__title {
     position: relative;
     width: 100%;
+    margin-bottom: 28px;
 
     &::before,
     &::after {
@@ -68,6 +73,13 @@
       right: 0;
     }
   }
+
+  .emotions__feedback-text {
+    margin-bottom: 48px;
+    font-size: 18px;
+    line-height: 1.44;
+    height: 159px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -80,5 +92,15 @@
     &::after {
       width: 280px;
     }
+  }
+
+  .emotions__feedback-text {
+    width: 768px;
+    margin: 0 96px 48px;
+  }
+
+  .emotions__bottom-wrapper {
+    width: 768px;
+    margin: 0 96px 64px;
   }
 }
