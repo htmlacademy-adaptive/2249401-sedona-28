@@ -156,12 +156,20 @@
     flex-direction: row;
     flex-grow: 1;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
     width: 100%;
     min-height: 80px;
     margin: 0;
     padding: 20px 20px 15px;
     background-color: #f2f2f2;
+
+    &--clicked {
+      background-color: #e5e5e5;
+    }
+  }
+
+  .collage__pic-icon {
+    top: 36%;
   }
 
   .collage__item--broad-item .collage_remark {
@@ -202,9 +210,25 @@
     padding: 17px 20px 17px 25px;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.3);
+
+    &--clicked {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    &--above {
+      padding: 22px 20px 15px 21px;
+    }
+  }
+
+  .collage__remark-group .collage__pic-main {
+    margin-bottom: 2px;
   }
 
   .collage__pic-icon {
     opacity: 1;
+  }
+
+  .collage__remark--above .collage__pic-icon {
+    top: 30%;
   }
 }
