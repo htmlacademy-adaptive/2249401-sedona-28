@@ -9,6 +9,12 @@
   border: none;
 }
 
+.feedback__section fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
 .feedback__request {
   display: flex;
   justify-content: center;
@@ -22,17 +28,21 @@
 }
 
 .feedback__field-text {
+  font-size: 18px;
+  line-height: 1.44;
   text-transform: none;
 }
 
 .feedback__legend {
   margin-top: 3px;
   color: rgba(51, 51, 51, 0.6);
+  font-size: 12px;
+  line-height: 1.75;
 }
 
 @media (max-width: @mobile-width-only) {
   .feedback__section {
-    margin-bottom: 24px;
+    padding: 24px 20px;
     width: 100%;
   }
 
@@ -45,20 +55,29 @@
     height: 1px;
     background-color: #e5e5e5;
   }
+
+  .feedback__section:last-child {
+    padding-bottom: 0;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .feedback__wrapper {
-    margin: 0 60px;
+    padding: 0 60px;
   }
 
   .feedback__section {
     padding: 0;
   }
+
+  .feedback__legend {
+    font-size: 14px;
+    line-height: 1.5;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .feedback__wrapper {
-    margin: 0 120px;
+    padding: 0 120px;
   }
 }

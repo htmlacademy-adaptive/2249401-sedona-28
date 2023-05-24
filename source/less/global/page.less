@@ -12,9 +12,9 @@
   margin: 0 auto;
   padding: 0;
   min-width: 320px;
-  max-width: 100vh;
+  max-width: 100%;
   height: 100%;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 1.5;
@@ -25,15 +25,9 @@
     rgba(0, 1, 1, 0.2);
 }
 
-@media (min-width: @tablet-width) {
-  .page__container {
-    min-width: 100%;
-  }
-}
-
 @media (min-width: @desktop-width) {
   .page__container {
-    min-width: 1200px;
+    width: 1200px;
   }
 
   .page__body {

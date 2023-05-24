@@ -3,19 +3,31 @@
   flex-direction: column;
   align-items: center;
   row-gap: 24px;
-  margin: 36px 0 28px;
+  padding: 14px 0 4px;
   max-width: 280px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .request__description br {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .request__wrapper {
     row-gap: 20px;
     margin: 64px 0 108px;
+    padding: 0;
     max-width: 436px;
+  }
+
+  .request__title {
+    font-size: 30px;
+    line-height: 0.87;
   }
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .request__wrapper {
     row-gap: 31px;
     margin: 115px 0 68px;

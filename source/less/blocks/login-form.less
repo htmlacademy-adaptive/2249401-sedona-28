@@ -4,11 +4,27 @@
   flex-wrap: wrap;
 }
 
+.login-form__wrapper-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-form__wrapper .login-form__wrapper-item {
+  padding-bottom: 39px;
+}
+
+.login-form__wrapper .login-form__wrapper-item:nth-child(2n) {
+  padding-bottom: 34px;
+}
+
+
 .login-form__group {
   position: relative;
   display: flex;
   flex-direction: column;
   min-height: 79px;
+  margin: 0;
 }
 
 .login-form__group--contacts {
@@ -32,10 +48,16 @@
 
 .login-form__label {
   align-self: flex-start;
+  padding-left: 16px;
 }
 
-.login-form__group:not(:last-child) {
-  margin-bottom: 16px;
+.login-form__title {
+  padding-top: 23px;
+}
+
+.login-form__field.title {
+  font-size: 18px;
+  line-height: 1.44;
 }
 
 .login-form__field {
@@ -72,22 +94,12 @@
   outline-color: #e5e5e5;
 }
 
-@media (max-width: @mobile-width-only) {
-  .login-form__group:last-child {
-    margin-bottom: 39px;
-  }
-
-  .login-form__wrapper-item:last-child .login-form__group:last-child {
-    margin-bottom: 34px;
-  }
-}
-
 @media (min-width: @tablet-width) {
   .login-form__wrapper {
     position: relative;
     flex-wrap: nowrap;
     gap: 58px;
-    margin-bottom: 63px;
+    margin-bottom: 24.5px;
   }
 
   .login-form__wrapper::after {
@@ -105,12 +117,17 @@
     width: 38.4%;
     min-width: 295px;
   }
+
+  .login-form__title {
+    padding: 0;
+    margin-bottom: 28px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .login-form__wrapper {
     gap: 100px;
-    margin-bottom: 71px;
+    margin-bottom: 33px;
   }
 
   .login-form__wrapper-item {
