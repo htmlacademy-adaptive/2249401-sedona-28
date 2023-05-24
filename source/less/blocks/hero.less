@@ -27,11 +27,8 @@
 }
 
 .hero__wrapper--small {
-  background-position: bottom;
-}
-
-.hero__small {
   height: 158px;
+  background-position: bottom;
 }
 
 .hero__hero-group {
@@ -48,6 +45,7 @@
 
 @media (min-width: @tablet-width) {
   .hero__wrapper {
+    height: 518px;
     background-image: url("../../img/back-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -60,17 +58,13 @@
     height: 350px;
   }
 
-  .hero__main {
-    height: 518px;
-  }
-
-  .hero__small {
+  .hero__wrapper--small {
     height: 290px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .hero__small {
+  .hero__wrapper--small {
     height: 300px;
   }
 }
